@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/PROYECTO/prueba_isim_beh.exe" -prj "D:/PROYECTO/prueba_beh.prj" "work.prueba" 

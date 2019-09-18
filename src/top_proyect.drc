@@ -1,0 +1,102 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Dec 28 10:42:48 2014
+
+drc -z top_proyect.ncd top_proyect.pcf
+
+WARNING:PhysDesignRules:812 - Dangling pin <DOA1> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA2> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA3> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA4> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA5> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA6> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA7> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA8> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA9> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA10> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA11> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA12> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA13> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA14> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA15> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA16> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA17> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA18> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA19> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA20> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA21> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA22> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA23> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA24> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA25> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA26> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA27> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA28> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA29> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA30> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOA31> on
+   block:<dibujar/enemy/mapa/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_
+   gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram.A>:<RAMB16_RAMB16A>.
+DRC detected 0 errors and 31 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

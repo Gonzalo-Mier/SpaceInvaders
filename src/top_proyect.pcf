@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.49d on Sun Dec 28 10:42:01 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "HS" LOCATE = SITE "R9" LEVEL 1;
+COMP "VS" LOCATE = SITE "T10" LEVEL 1;
+COMP "B" LOCATE = SITE "R11" LEVEL 1;
+COMP "G" LOCATE = SITE "T12" LEVEL 1;
+COMP "reset" LOCATE = SITE "L14" LEVEL 1;
+COMP "R" LOCATE = SITE "R12" LEVEL 1;
+SCHEMATIC END;
+

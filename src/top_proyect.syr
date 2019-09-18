@@ -1,0 +1,702 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.72 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.72 secs
+ 
+--> Reading design: top_proyect.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_proyect.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_proyect"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : top_proyect
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/PROYECTO/ipcore_dir/MARCIANO1.vhd" in Library work.
+Entity <MARCIANO1> compiled.
+Entity <MARCIANO1> (Architecture <MARCIANO1_a>) compiled.
+Compiling vhdl file "D:/PROYECTO/ipcore_dir/mapa_marcianos.vhd" in Library work.
+Entity <mapa_marcianos> compiled.
+Entity <mapa_marcianos> (Architecture <mapa_marcianos_a>) compiled.
+Compiling vhdl file "D:/PROYECTO/MARCIANOS.vhd" in Library work.
+Entity <MARCIANO_1> compiled.
+Entity <MARCIANO_1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/P2/CONTADOR.vhd" in Library work.
+Entity <CONTADOR> compiled.
+Entity <CONTADOR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/P2/COMPARADOR.vhd" in Library work.
+Entity <COMPARADOR> compiled.
+Entity <COMPARADOR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/P2/GEN_COLOR.vhd" in Library work.
+Entity <GEN_COLOR> compiled.
+Entity <GEN_COLOR> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/PROYECTO/ENEMIGOS.vhd" in Library work.
+Entity <ENEMIGOS> compiled.
+Entity <ENEMIGOS> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/P2/dibuja.vhd" in Library work.
+Entity <dibuja> compiled.
+Entity <dibuja> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/P2/VGA_DRIVER.vhd" in Library work.
+Entity <VGA_DRIVER> compiled.
+Entity <VGA_DRIVER> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/PROYECTO/top_proyect.vhd" in Library work.
+Entity <top_proyect> compiled.
+Entity <top_proyect> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top_proyect> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <dibuja> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <VGA_DRIVER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ENEMIGOS> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <CONTADOR> in library <work> (architecture <Behavioral>) with generics.
+	Nbit = 10
+
+Analyzing hierarchy for entity <COMPARADOR> in library <work> (architecture <Behavioral>) with generics.
+	End_Of_Line = 799
+	End_Of_Pulse = 751
+	End_Of_Screen = 639
+	Nbit = 10
+	Start_Of_Pulse = 655
+
+Analyzing hierarchy for entity <COMPARADOR> in library <work> (architecture <Behavioral>) with generics.
+	End_Of_Line = 520
+	End_Of_Pulse = 491
+	End_Of_Screen = 479
+	Nbit = 10
+	Start_Of_Pulse = 489
+
+Analyzing hierarchy for entity <GEN_COLOR> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <MARCIANO_1> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top_proyect> in library <work> (Architecture <Behavioral>).
+Entity <top_proyect> analyzed. Unit <top_proyect> generated.
+
+Analyzing Entity <dibuja> in library <work> (Architecture <Behavioral>).
+Entity <dibuja> analyzed. Unit <dibuja> generated.
+
+Analyzing Entity <ENEMIGOS> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:2211 - "D:/PROYECTO/ENEMIGOS.vhd" line 91: Instantiating black box module <mapa_marcianos>.
+INFO:Xst:2679 - Register <dina> in unit <ENEMIGOS> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <ENEMIGOS> analyzed. Unit <ENEMIGOS> generated.
+
+Analyzing Entity <MARCIANO_1> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "D:/PROYECTO/MARCIANOS.vhd" line 78: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <p_cont>, <pos_rel_x>, <pos_rel_y>, <mov>
+WARNING:Xst:2211 - "D:/PROYECTO/MARCIANOS.vhd" line 119: Instantiating black box module <MARCIANO1>.
+Entity <MARCIANO_1> analyzed. Unit <MARCIANO_1> generated.
+
+Analyzing Entity <VGA_DRIVER> in library <work> (Architecture <Behavioral>).
+Entity <VGA_DRIVER> analyzed. Unit <VGA_DRIVER> generated.
+
+Analyzing generic Entity <CONTADOR> in library <work> (Architecture <Behavioral>).
+	Nbit = 10
+Entity <CONTADOR> analyzed. Unit <CONTADOR> generated.
+
+Analyzing generic Entity <COMPARADOR.1> in library <work> (Architecture <Behavioral>).
+	End_Of_Line = 799
+	End_Of_Pulse = 751
+	End_Of_Screen = 639
+	Nbit = 10
+	Start_Of_Pulse = 655
+Entity <COMPARADOR.1> analyzed. Unit <COMPARADOR.1> generated.
+
+Analyzing generic Entity <COMPARADOR.2> in library <work> (Architecture <Behavioral>).
+	End_Of_Line = 520
+	End_Of_Pulse = 491
+	End_Of_Screen = 479
+	Nbit = 10
+	Start_Of_Pulse = 489
+Entity <COMPARADOR.2> analyzed. Unit <COMPARADOR.2> generated.
+
+Analyzing Entity <GEN_COLOR> in library <work> (Architecture <Behavioral>).
+Entity <GEN_COLOR> analyzed. Unit <GEN_COLOR> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CONTADOR>.
+    Related source file is "D:/P2/CONTADOR.vhd".
+    Found 10-bit up counter for signal <p_cuenta1>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <CONTADOR> synthesized.
+
+
+Synthesizing Unit <COMPARADOR_1>.
+    Related source file is "D:/P2/COMPARADOR.vhd".
+    Found 1-bit register for signal <O1>.
+    Found 1-bit register for signal <O2>.
+    Found 1-bit register for signal <O3>.
+    Found 11-bit comparator greater for signal <O1$cmp_gt0000> created at line 55.
+    Found 11-bit comparator greater for signal <O2$cmp_lt0000> created at line 60.
+    Found 11-bit comparator less for signal <O2$cmp_lt0001> created at line 60.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <COMPARADOR_1> synthesized.
+
+
+Synthesizing Unit <COMPARADOR_2>.
+    Related source file is "D:/P2/COMPARADOR.vhd".
+    Found 1-bit register for signal <O1>.
+    Found 1-bit register for signal <O2>.
+    Found 1-bit register for signal <O3>.
+    Found 11-bit comparator greater for signal <O1$cmp_gt0000> created at line 55.
+    Found 11-bit comparator greater for signal <O2$cmp_lt0000> created at line 60.
+    Found 11-bit comparator less for signal <O2$cmp_lt0001> created at line 60.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <COMPARADOR_2> synthesized.
+
+
+Synthesizing Unit <GEN_COLOR>.
+    Related source file is "D:/P2/GEN_COLOR.vhd".
+Unit <GEN_COLOR> synthesized.
+
+
+Synthesizing Unit <VGA_DRIVER>.
+    Related source file is "D:/P2/VGA_DRIVER.vhd".
+    Found 1-bit register for signal <clk_pixel>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <VGA_DRIVER> synthesized.
+
+
+Synthesizing Unit <MARCIANO_1>.
+    Related source file is "D:/PROYECTO/MARCIANOS.vhd".
+WARNING:Xst:1780 - Signal <p_cont_y1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <p_cont_x1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <p_cont> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cont_y1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cont_x1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 10-bit latch for signal <cont_x>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 10-bit latch for signal <cont_y>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Using one-hot encoding for signal <mov>.
+    Found 10-bit adder for signal <$add0000> created at line 88.
+    Found 10-bit subtractor for signal <$sub0000> created at line 99.
+    Found 10-bit subtractor for signal <$sub0001> created at line 99.
+    Found 11-bit comparator less for signal <dir_mar_x$cmp_lt0000> created at line 99.
+    Found 11-bit comparator less for signal <dir_mar_x$cmp_lt0001> created at line 99.
+    Found 10-bit addsub for signal <pos_rel_x$addsub0000>.
+    Found 10-bit adder for signal <pos_rel_y$addsub0000> created at line 73.
+    Found 10-bit subtractor for signal <sub0000$addsub0000> created at line 99.
+    Found 10-bit subtractor for signal <sub0001$addsub0000> created at line 99.
+    Summary:
+	inferred   7 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <MARCIANO_1> synthesized.
+
+
+Synthesizing Unit <ENEMIGOS>.
+    Related source file is "D:/PROYECTO/ENEMIGOS.vhd".
+WARNING:Xst:647 - Input <eje_y_colision<9:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <eje_y_colision<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <eje_x_colision<9>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <eje_x_colision<4:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <ENEMIGOS> synthesized.
+
+
+Synthesizing Unit <dibuja>.
+    Related source file is "D:/P2/dibuja.vhd".
+Unit <dibuja> synthesized.
+
+
+Synthesizing Unit <top_proyect>.
+    Related source file is "D:/PROYECTO/top_proyect.vhd".
+Unit <top_proyect> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 2
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 4
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 7
+ 1-bit register                                        : 7
+# Latches                                              : 2
+ 10-bit latch                                          : 2
+# Comparators                                          : 8
+ 11-bit comparator greater                             : 4
+ 11-bit comparator less                                : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/MARCIANO1.ngc>.
+Reading core <ipcore_dir/mapa_marcianos.ngc>.
+Loading core <MARCIANO1> for timing and area information for instance <marciano>.
+Loading core <mapa_marcianos> for timing and area information for instance <mapa>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 7
+ 10-bit adder                                          : 2
+ 10-bit addsub                                         : 1
+ 10-bit subtractor                                     : 4
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+# Latches                                              : 2
+ 10-bit latch                                          : 2
+# Comparators                                          : 8
+ 11-bit comparator greater                             : 4
+ 11-bit comparator less                                : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram in unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram of type RAMB16_S36_S36 has been replaced by RAMB16
+WARNING:Xst:2170 - Unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram : the following signal(s) form a combinatorial loop: MARCIANO_1/pos_rel_x<0>, MARCIANO_1/dir_mar<6>, MARCIANO_1/Msub__sub0000_cy<3>, MARCIANO_1/Msub__sub0000_cy<2>, MARCIANO_1/dir_mar_x_and0000, MARCIANO_1/Msub__sub0000_cy<8>, ADDRA7, MARCIANO_1/mov_cmp_eq0000, MARCIANO_1/Msub__sub0000_cy<7>, MARCIANO_1/Msub__sub0000_cy<4>, MARCIANO_1/mov<1>, MARCIANO_1/sub0000_addsub0000<1>, MARCIANO_1/_sub0000<9>, MARCIANO_1/Msub_sub0000_addsub0000_cy<0>, MARCIANO_1/Msub__sub0000_cy<1>, MARCIANO_1/dir_mar_x_cmp_lt0000, MARCIANO_1/Msub__sub0000_cy<5>, MARCIANO_1/Msub_sub0000_addsub0000_lut<0>, MARCIANO_1/Msub__sub0000_cy<6>, marciano/addra<6>.
+WARNING:Xst:2170 - Unit U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram : the following signal(s) form a combinatorial loop: mov<1>.
+WARNING:Xst:2170 - Unit marciano : the following signal(s) form a combinatorial loop: mov<1>.
+WARNING:Xst:2170 - Unit MARCIANO_1 : the following signal(s) form a combinatorial loop: mov<1>.
+
+Optimizing unit <top_proyect> ...
+
+Optimizing unit <COMPARADOR_1> ...
+
+Optimizing unit <COMPARADOR_2> ...
+
+Optimizing unit <VGA_DRIVER> ...
+
+Optimizing unit <MARCIANO_1> ...
+
+Optimizing unit <ENEMIGOS> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_proyect, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_proyect.ngr
+Top Level Output File Name         : top_proyect
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 296
+#      GND                         : 5
+#      INV                         : 3
+#      LUT1                        : 7
+#      LUT2                        : 60
+#      LUT2_D                      : 10
+#      LUT2_L                      : 1
+#      LUT3                        : 33
+#      LUT3_D                      : 3
+#      LUT4                        : 55
+#      LUT4_L                      : 5
+#      MUXCY                       : 52
+#      MUXF5                       : 8
+#      VCC                         : 3
+#      XORCY                       : 51
+# FlipFlops/Latches                : 47
+#      FDC                         : 5
+#      FDCE                        : 20
+#      FDP                         : 2
+#      LDE_1                       : 20
+# RAMS                             : 2
+#      RAMB16                      : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 7
+#      IBUF                        : 2
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       93  out of   1920     4%  
+ Number of Slice Flip Flops:             47  out of   3840     1%  
+ Number of 4 input LUTs:                177  out of   3840     4%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    173     4%  
+ Number of BRAMs:                         2  out of     12    16%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------+---------------------------------------------+-------+
+Clock Signal                                                                             | Clock buffer(FF name)                       | Load  |
+-----------------------------------------------------------------------------------------+---------------------------------------------+-------+
+clk                                                                                      | IBUF+BUFG                                   | 29    |
+dibujar/enemy/marciano_1_1/cont_x_not00031(dibujar/enemy/marciano_1_1/cont_x_not000316:O)| BUFG(*)(dibujar/enemy/marciano_1_1/cont_y_0)| 20    |
+-----------------------------------------------------------------------------------------+---------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 27    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 20.187ns (Maximum Frequency: 49.537MHz)
+   Minimum input arrival time before clock: 32.243ns
+   Maximum output required time after clock: 8.962ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 14.704ns (frequency: 68.009MHz)
+  Total number of paths / destination ports: 15127 / 75
+-------------------------------------------------------------------------
+Delay:               14.704ns (Levels of Logic = 14)
+  Source:            VGA/conth/p_cuenta1_0 (FF)
+  Destination:       dibujar/enemy/marciano_1_1/marciano/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: VGA/conth/p_cuenta1_0 to dibujar/enemy/marciano_1_1/marciano/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.720   1.256  VGA/conth/p_cuenta1_0 (VGA/conth/p_cuenta1_0)
+     LUT2:I0->O            1   0.551   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_lut<0> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<0> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<1> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<2> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<3> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<3>)
+     XORCY:CI->O           1   0.904   1.140  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_xor<4> (dibujar/enemy/marciano_1_1/sub0000_addsub0000<4>)
+     LUT1:I0->O            1   0.551   0.000  dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4>_rt (dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4>_rt)
+     MUXCY:S->O            1   0.500   0.000  dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4> (dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4>)
+     XORCY:CI->O           1   0.904   1.140  dibujar/enemy/marciano_1_1/Msub__sub0000_xor<5> (dibujar/enemy/marciano_1_1/_sub0000<5>)
+     LUT4_L:I0->LO         1   0.551   0.439  dibujar/enemy/marciano_1_1/dir_mar_x_and000012 (dibujar/enemy/marciano_1_1/dir_mar_x_and000012)
+     LUT4:I0->O            5   0.551   1.260  dibujar/enemy/marciano_1_1/dir_mar_x_and000029 (dibujar/enemy/marciano_1_1/dir_mar_x_and000029)
+     LUT3_D:I0->O          2   0.551   1.216  dibujar/enemy/marciano_1_1/dir_mar_x_and000061 (dibujar/enemy/marciano_1_1/dir_mar_x_and0000)
+     LUT2:I0->O            2   0.551   0.877  dibujar/enemy/marciano_1_1/dir_mar<5>1 (dibujar/enemy/marciano_1_1/dir_mar<5>)
+     begin scope: 'dibujar/enemy/marciano_1_1/marciano'
+     begin scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram'
+     RAMB16:ADDRB11            0.350          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram
+    ----------------------------------------
+    Total                     14.704ns (7.376ns logic, 7.328ns route)
+                                       (50.2% logic, 49.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'dibujar/enemy/marciano_1_1/cont_x_not00031'
+  Clock period: 20.187ns (frequency: 49.537MHz)
+  Total number of paths / destination ports: 4263 / 20
+-------------------------------------------------------------------------
+Delay:               20.187ns (Levels of Logic = 14)
+  Source:            dibujar/enemy/marciano_1_1/cont_x_0 (LATCH)
+  Destination:       dibujar/enemy/marciano_1_1/cont_x_0 (LATCH)
+  Source Clock:      dibujar/enemy/marciano_1_1/cont_x_not00031 rising
+  Destination Clock: dibujar/enemy/marciano_1_1/cont_x_not00031 rising
+
+  Data Path: dibujar/enemy/marciano_1_1/cont_x_0 to dibujar/enemy/marciano_1_1/cont_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            3   0.633   1.246  dibujar/enemy/marciano_1_1/cont_x_0 (dibujar/enemy/marciano_1_1/cont_x_0)
+     LUT2_D:I0->LO         1   0.551   0.439  dibujar/enemy/marciano_1_1/Maddsub_pos_rel_x_addsub0000_lut<0>1 (N49)
+     LUT3:I0->O            3   0.551   0.975  dibujar/enemy/marciano_1_1/Maddsub_pos_rel_x_addsub0000_cy<0>11 (dibujar/enemy/marciano_1_1/Maddsub_pos_rel_x_addsub0000_cy<0>)
+     LUT3:I2->O            1   0.551   0.000  dibujar/enemy/marciano_1_1/Maddsub_pos_rel_x_addsub0000_cy<2>11 (dibujar/enemy/marciano_1_1/Maddsub_pos_rel_x_addsub0000_cy<2>1)
+     MUXF5:I1->O           3   0.360   0.933  dibujar/enemy/marciano_1_1/Maddsub_pos_rel_x_addsub0000_cy<2>1_f5 (dibujar/enemy/marciano_1_1/Maddsub_pos_rel_x_addsub0000_cy<2>)
+     LUT4:I3->O            4   0.551   1.256  dibujar/enemy/marciano_1_1/pos_rel_x<3> (dibujar/enemy/marciano_1_1/pos_rel_x<3>)
+     LUT2:I0->O            2   0.551   1.072  dibujar/enemy/marciano_1_1/Madd__add0000_cy<3>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<3>)
+     LUT2_D:I1->LO         1   0.551   0.295  dibujar/enemy/marciano_1_1/Madd__add0000_cy<4>11 (N54)
+     LUT2:I1->O            2   0.551   1.072  dibujar/enemy/marciano_1_1/Madd__add0000_cy<5>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<5>)
+     LUT2_D:I1->O          1   0.551   0.996  dibujar/enemy/marciano_1_1/Madd__add0000_cy<6>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<6>)
+     LUT2:I1->O            1   0.551   0.801  dibujar/enemy/marciano_1_1/mov_cmp_eq000041 (dibujar/enemy/marciano_1_1/mov_cmp_eq000041)
+     MUXF5:S->O            1   0.621   0.996  dibujar/enemy/marciano_1_1/mov_cmp_eq0000159_f5 (dibujar/enemy/marciano_1_1/mov_cmp_eq0000)
+     LUT2_D:I1->LO         1   0.551   0.295  dibujar/enemy/marciano_1_1/mov_and00001 (N52)
+     LUT2:I1->O           14   0.551   1.382  dibujar/enemy/marciano_1_1/pos_rel_y<1>11 (dibujar/enemy/marciano_1_1/N01)
+     LUT4:I1->O            3   0.551   0.000  dibujar/enemy/marciano_1_1/pos_rel_x<0>1 (dibujar/enemy/marciano_1_1/pos_rel_x<0>)
+     LDE_1:D                   0.203          dibujar/enemy/marciano_1_1/cont_x_0
+    ----------------------------------------
+    Total                     20.187ns (8.429ns logic, 11.758ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 149450 / 28
+-------------------------------------------------------------------------
+Offset:              32.243ns (Levels of Logic = 26)
+  Source:            reset (PAD)
+  Destination:       dibujar/enemy/marciano_1_1/marciano/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram (RAM)
+  Destination Clock: clk rising
+
+  Data Path: reset to dibujar/enemy/marciano_1_1/marciano/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   0.821   2.094  reset_IBUF (reset_IBUF)
+     LUT2:I1->O           10   0.551   1.202  dibujar/enemy/marciano_1_1/pos_rel_y<1>21 (dibujar/enemy/marciano_1_1/N11)
+     LUT4:I2->O            4   0.551   1.256  dibujar/enemy/marciano_1_1/pos_rel_x<3> (dibujar/enemy/marciano_1_1/pos_rel_x<3>)
+     LUT2:I0->O            2   0.551   1.072  dibujar/enemy/marciano_1_1/Madd__add0000_cy<3>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<3>)
+     LUT2_D:I1->LO         1   0.551   0.295  dibujar/enemy/marciano_1_1/Madd__add0000_cy<4>11 (N54)
+     LUT2:I1->O            2   0.551   1.072  dibujar/enemy/marciano_1_1/Madd__add0000_cy<5>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<5>)
+     LUT2_D:I1->O          1   0.551   0.996  dibujar/enemy/marciano_1_1/Madd__add0000_cy<6>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<6>)
+     LUT2:I1->O            1   0.551   0.801  dibujar/enemy/marciano_1_1/mov_cmp_eq000041 (dibujar/enemy/marciano_1_1/mov_cmp_eq000041)
+     MUXF5:S->O            1   0.621   0.996  dibujar/enemy/marciano_1_1/mov_cmp_eq0000159_f5 (dibujar/enemy/marciano_1_1/mov_cmp_eq0000)
+     LUT2_D:I1->LO         1   0.551   0.295  dibujar/enemy/marciano_1_1/mov_and00001 (N52)
+     LUT2:I1->O           14   0.551   1.382  dibujar/enemy/marciano_1_1/pos_rel_y<1>11 (dibujar/enemy/marciano_1_1/N01)
+     LUT4:I1->O            3   0.551   1.102  dibujar/enemy/marciano_1_1/pos_rel_x<0>1 (dibujar/enemy/marciano_1_1/pos_rel_x<0>)
+     LUT2:I1->O            1   0.551   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_lut<0> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<0> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<1> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<2> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<3> (dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_cy<3>)
+     XORCY:CI->O           1   0.904   1.140  dibujar/enemy/marciano_1_1/Msub_sub0000_addsub0000_xor<4> (dibujar/enemy/marciano_1_1/sub0000_addsub0000<4>)
+     LUT1:I0->O            1   0.551   0.000  dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4>_rt (dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4>_rt)
+     MUXCY:S->O            1   0.500   0.000  dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4> (dibujar/enemy/marciano_1_1/Msub__sub0000_cy<4>)
+     XORCY:CI->O           1   0.904   1.140  dibujar/enemy/marciano_1_1/Msub__sub0000_xor<5> (dibujar/enemy/marciano_1_1/_sub0000<5>)
+     LUT4_L:I0->LO         1   0.551   0.439  dibujar/enemy/marciano_1_1/dir_mar_x_and000012 (dibujar/enemy/marciano_1_1/dir_mar_x_and000012)
+     LUT4:I0->O            5   0.551   1.260  dibujar/enemy/marciano_1_1/dir_mar_x_and000029 (dibujar/enemy/marciano_1_1/dir_mar_x_and000029)
+     LUT3_D:I0->O          2   0.551   1.216  dibujar/enemy/marciano_1_1/dir_mar_x_and000061 (dibujar/enemy/marciano_1_1/dir_mar_x_and0000)
+     LUT2:I0->O            2   0.551   0.877  dibujar/enemy/marciano_1_1/dir_mar<5>1 (dibujar/enemy/marciano_1_1/dir_mar<5>)
+     begin scope: 'dibujar/enemy/marciano_1_1/marciano'
+     begin scope: 'U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram'
+     RAMB16:ADDRB11            0.350          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_init.ram/spram.ram
+    ----------------------------------------
+    Total                     32.243ns (13.608ns logic, 18.635ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'dibujar/enemy/marciano_1_1/cont_x_not00031'
+  Total number of paths / destination ports: 340 / 20
+-------------------------------------------------------------------------
+Offset:              18.616ns (Levels of Logic = 12)
+  Source:            reset (PAD)
+  Destination:       dibujar/enemy/marciano_1_1/cont_x_0 (LATCH)
+  Destination Clock: dibujar/enemy/marciano_1_1/cont_x_not00031 rising
+
+  Data Path: reset to dibujar/enemy/marciano_1_1/cont_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            40   0.821   2.094  reset_IBUF (reset_IBUF)
+     LUT2:I1->O           10   0.551   1.202  dibujar/enemy/marciano_1_1/pos_rel_y<1>21 (dibujar/enemy/marciano_1_1/N11)
+     LUT4:I2->O            4   0.551   1.256  dibujar/enemy/marciano_1_1/pos_rel_x<3> (dibujar/enemy/marciano_1_1/pos_rel_x<3>)
+     LUT2:I0->O            2   0.551   1.072  dibujar/enemy/marciano_1_1/Madd__add0000_cy<3>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<3>)
+     LUT2_D:I1->LO         1   0.551   0.295  dibujar/enemy/marciano_1_1/Madd__add0000_cy<4>11 (N54)
+     LUT2:I1->O            2   0.551   1.072  dibujar/enemy/marciano_1_1/Madd__add0000_cy<5>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<5>)
+     LUT2_D:I1->O          1   0.551   0.996  dibujar/enemy/marciano_1_1/Madd__add0000_cy<6>11 (dibujar/enemy/marciano_1_1/Madd__add0000_cy<6>)
+     LUT2:I1->O            1   0.551   0.801  dibujar/enemy/marciano_1_1/mov_cmp_eq000041 (dibujar/enemy/marciano_1_1/mov_cmp_eq000041)
+     MUXF5:S->O            1   0.621   0.996  dibujar/enemy/marciano_1_1/mov_cmp_eq0000159_f5 (dibujar/enemy/marciano_1_1/mov_cmp_eq0000)
+     LUT2_D:I1->LO         1   0.551   0.295  dibujar/enemy/marciano_1_1/mov_and00001 (N52)
+     LUT2:I1->O           14   0.551   1.382  dibujar/enemy/marciano_1_1/pos_rel_y<1>11 (dibujar/enemy/marciano_1_1/N01)
+     LUT4:I1->O            3   0.551   0.000  dibujar/enemy/marciano_1_1/pos_rel_x<0>1 (dibujar/enemy/marciano_1_1/pos_rel_x<0>)
+     LDE_1:D                   0.203          dibujar/enemy/marciano_1_1/cont_x_0
+    ----------------------------------------
+    Total                     18.616ns (7.155ns logic, 11.461ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 5
+-------------------------------------------------------------------------
+Offset:              8.962ns (Levels of Logic = 2)
+  Source:            VGA/compv/O1 (FF)
+  Destination:       B (PAD)
+  Source Clock:      clk rising
+
+  Data Path: VGA/compv/O1 to B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.720   1.140  VGA/compv/O1 (VGA/compv/O1)
+     LUT4:I0->O            3   0.551   0.907  VGA/color/R1 (B_OBUF)
+     OBUF:I->O                 5.644          B_OBUF (B)
+    ----------------------------------------
+    Total                      8.962ns (6.915ns logic, 2.047ns route)
+                                       (77.2% logic, 22.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 30.00 secs
+Total CPU time to Xst completion: 30.16 secs
+ 
+--> 
+
+Total memory usage is 274336 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

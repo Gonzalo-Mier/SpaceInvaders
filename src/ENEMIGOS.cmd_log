@@ -1,0 +1,2 @@
+vhdtdtfi -lib work MARCIANOS.vhd -lib work ENEMIGOS.vhd -prj PROYECTO -o ENEMIGOS.spl -module ENEMIGOS -template C:/Xilinx/14.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 ENEMIGOS.spl D:/PROYECTO/ENEMIGOS.sym 
